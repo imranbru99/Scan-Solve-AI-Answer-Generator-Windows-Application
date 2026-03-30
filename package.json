@@ -1,0 +1,33 @@
+{
+  "name": "blog-cutter-ai-answer",
+  "description": "Best AI Answer Generator from Image",
+  "author": "Blog Cutter AI <support@blogcutter.com>",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^24.13.3"
+  },
+"build": {
+  "appId": "com.blogcutter.ai",
+  "productName": "Blog Cutter AI Assistant",
+  "win": {
+    "target": "nsis"
+  },
+  "directories": {
+    "output": "dist"
+  },
+  "nsis": {
+    "oneClick": true,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Blog Cutter AI"
+  }
+}
+}
